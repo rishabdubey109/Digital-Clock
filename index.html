@@ -3,24 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Digital Clock</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="clock-container">
-        <h1>Digital Clock</h1>
 
-        <div id="clock">
-            <span id="hours">00</span> :
-            <span id="minutes">00</span> :
-            <span id="seconds">00</span>
+        <h1>Digital Clock</h1>
+        <p class="subtitle">Current Date & Time</p>
+
+        <div class="clock">
+            <div class="time-box">
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+
+            <span class="colon">:</span>
+
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+
+            <span class="colon">:</span>
+
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+            </div>
+
             <span id="ampm">AM</span>
         </div>
 
-        <p id="date"></p>
+        <p id="date">Loading date...</p>
+
+        <button id="formatBtn">Switch to 24 Hour</button>
+
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
